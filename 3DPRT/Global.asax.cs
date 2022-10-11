@@ -24,7 +24,7 @@ namespace _3DPRT
 
         void Session_start(object sender, EventArgs e)
         {
-            Session["SessionStartDateTime"] = DateTime.Now;
+            //Session["SessionStartDateTime"] = DateTime.Now;
         }
 
     }

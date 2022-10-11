@@ -13,9 +13,20 @@ namespace _3DPRT
             }
         }
 
-        protected void btnRegistert_Click(object sender, EventArgs e)
+        protected void Register_Click(object sender, EventArgs e)
         {
-            ltMessage.Text = $"Your email {txtEmail.Text} has been registered";
+            if (txtEmail.Text.Length < 0)
+            {
+                ltMessage.Text = "Please fill in your email!";
+            }
+            else if (txtPassword.Text.Length < 8)
+            {
+                ltMessage.Text = "Please have your password longer than 8 characters!";
+            }
+            else
+            {
+                ltMessage.Text = $"Your email {txtEmail.Text} has been registered";
+            }            
         }
     }
 }
