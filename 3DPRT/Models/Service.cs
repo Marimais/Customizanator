@@ -7,6 +7,6 @@ namespace _3DPRT.Models
         [Key]
         public int ID { get; set; }
         [Required]
-        public string ServiceName { get; set; }
+        public int Price { get; set; }
     }
 }
