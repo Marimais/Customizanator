@@ -210,10 +210,13 @@
     </Compile>
     <Compile Include="Models\BluePrint.cs" />
     <Compile Include="Models\CNC.cs" />
+    <Compile Include="Models\Colors.cs" />
     <Compile Include="Models\Laser.cs" />
+    <Compile Include="Models\Materials.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Printing.cs" />
+    <Compile Include="Models\PrintingMaterials.cs" />
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -7,7 +7,7 @@ namespace _3DPRT.Models
         [Required]
         public BluePrint Image { get; set;}
         [Required]
-        public string Material { get; set;}
+        public Materials Material { get; set;}
         [Required]
         public int MaterialThickness { get; set; } 
         [Required]
