@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Signup.aspx.cs" Inherits="_3DPRT.Signup" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Signup.aspx.cs" Inherits="_3DPRT.Signup" ViewStateMode="Disabled"%>
 
 <!DOCTYPE html>
 
@@ -18,7 +18,7 @@
         <p>
             <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
 &nbsp;
-            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtEmail" runat="server" ViewStateMode="Disabled"></asp:TextBox>
         </p>
         <p>
             <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
