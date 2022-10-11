@@ -18,6 +18,14 @@ namespace _3DPRT
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Application["ApplicationStartDateTime"] = DateTime.Now;
         }
+
+        void Session_start(object sender, EventArgs e)
+        {
+            Session["SessionStartDateTime"] = DateTime.Now;
+        }
+
     }
 }
