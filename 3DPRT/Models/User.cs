@@ -18,7 +18,6 @@ namespace _3DPRT.Models
         [Display(Name = "Password")]
         public string Password { get ; set; }
 
-        public virtual ICollection<Model> Models { get; set; }
-
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }
