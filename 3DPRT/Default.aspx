@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="mainContent" runat="server">
 
-    <div style="vertical-align:middle; position: absolute; width: 106%; top: 20%; left: -16px;  text-align: center; font-family: 'Righteous';"  align="center" >
+    <div style="vertical-align:middle; position: absolute; width: 70%; left:15%; top: 20%;   text-align: center; font-family: 'Righteous';"  align="center" >
         <div class="jumbotron" align="center" style="background-color:#CE8523;" >
             <div class="row">
                 <div class="col-md-4">
