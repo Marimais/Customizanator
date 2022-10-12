@@ -86,7 +86,7 @@
             </asp:TableHeaderRow>
             <asp:TableRow>
                 <asp:TableCell>
-                    <a href="Signup.aspx">Sign Up</a>
+                    <a href="Signup.aspx" style="color:azure">Sign Up</a>
                 </asp:TableCell>
 
                 <asp:TableCell>
@@ -95,13 +95,13 @@
             </asp:TableRow>
             <asp:TableRow HorizontalAlign="NotSet">
                 <asp:TableCell>
-                    <a href="#">About Us</a>
+                    <a href="#" style="color:azure">About Us</a>
                 </asp:TableCell>
                 <asp:TableCell>(+372) 1234 5678</asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell>
-                    <a href="#">FAQs</a>
+                    <a href="#" style="color:azure">FAQs</a>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
