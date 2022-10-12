@@ -6,66 +6,111 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title>SoftBear</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+
+    <style>
+        title {
+            position: relative;
+            width: 434px;
+            height: 45px;
+            font-family: 'Righteous';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 50px;
+            letter-spacing: 0.15px;
+            color: #2A363B;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        body {
+            background-color: #FCE7CC;
+            mix-blend-mode: darken;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding-left:20px;
+            padding-right:20px;
+        }
+
+        main {
+            background: #CE8523;
+            color: #CE8523;
+            position: fixed;
+            width: 100%;
+            height: 70%;
+            top: 100px;
+            left: 20px;
+        }
+
+        footer {
+            width: 106%;
+            height: 32%;
+            position: absolute;
+            bottom: -118px;
+            background: #2A363B;
+            color: azure;
+            text-align: center;
+            left: -4px;
+            margin-right: 267px;
+        }
+
+        .main {
+        }
+    </style>
 
 </head>
-<body>
-    <form runat="server">
-        <asp:ScriptManager runat="server">
-            <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
-            </Scripts>
-        </asp:ScriptManager>
+<body class="body">
+    <asp:ContentPlaceHolder ID="title" runat="server">
+        <asp:Label ID="lblTitle" runat="server" Text="SoftBear Solutions" CssClass="title"></asp:Label>
+    </asp:ContentPlaceHolder>
+    <br />
+    <nav class="navbar navbar-dark bg-dark pull-right">
+        <form class="form-inline" >
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" style="color:darkgoldenrod">Search</button>
+        </form>
+    </nav>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
-        </div>
+    <form id="mainForm" runat="server" class="main">
+        <asp:ContentPlaceHolder ID="mainContent" runat="server">
 
+        </asp:ContentPlaceHolder>
     </form>
+
+    <asp:ContentPlaceHolder ID="footer" runat="server">
+        <footer class="footer">
+            <asp:Table ID="tblFooter" runat="server" Height="70%" Width="70%" HorizontalAlign="Center" BorderWidth="20px" BorderColor="Transparent">
+                <asp:TableHeaderRow>
+                    <asp:TableHeaderCell Text="Site Links" HorizontalAlign="Center" Style="text-align: center; font-size: 16px;"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Text="Contact Us" HorizontalAlign="Center" Style="text-align: center; font-size: 16px;"></asp:TableHeaderCell>
+                    <asp:TableHeaderCell Text="Follow Us" HorizontalAlign="Center" Style="text-align: center; font-size: 16px;"></asp:TableHeaderCell>
+                </asp:TableHeaderRow>
+                <asp:TableRow>
+                    <asp:TableCell Text="Sign Up" />
+                    <asp:TableCell Text="info@softbear.com" />
+                </asp:TableRow>
+                <asp:TableRow HorizontalAlign="NotSet">
+                    <asp:TableCell Text="About Us" />
+                    <asp:TableCell Text="(+372) 1234 5678" />
+                </asp:TableRow>
+                <asp:TableRow>
+                    <asp:TableCell Text="FAQs" />
+                </asp:TableRow>
+            </asp:Table>
+        </footer>
+    </asp:ContentPlaceHolder>
+
 </body>
+
+
 </html>
