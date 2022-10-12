@@ -3,7 +3,7 @@
 <asp:Content ID="SignUpContent" ContentPlaceHolderID="mainContent" runat="server">
 
     <div align="center" style="height: 160px; margin-top: 143px; text-align: center; font-family: 'Righteous';">
-        <h1>Sign Up</h1>
+        <h2>Sign Up</h2>
         <p>
             <asp:Literal ID="ltMessage" runat="server"></asp:Literal>
         </p>
