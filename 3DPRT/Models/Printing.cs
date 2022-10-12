@@ -5,9 +5,9 @@ namespace _3DPRT.Models
     public class Printing:Service
     {
         [Required]
-        public Colors Color { get; set; }
+        public Color Color { get; set; }
         [Required]
-        public PrintingMaterials Material { get; set; }
+        public PrintingMaterial Material { get; set; }
         [Required]
         public  Model Model;
     }

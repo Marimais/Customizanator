@@ -1,6 +1,6 @@
 ﻿namespace _3DPRT.Models
 {
-    public enum Colors
+    public enum Color
     {
         Aquamarine,
         Azure,

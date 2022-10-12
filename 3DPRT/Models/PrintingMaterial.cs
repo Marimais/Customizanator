@@ -1,6 +1,6 @@
 ﻿namespace _3DPRT.Models
 {
-    public enum PrintingMaterials
+    public enum PrintingMaterial
     {
         ABS,
         PLA,
