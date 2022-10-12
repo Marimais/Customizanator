@@ -15,15 +15,6 @@ namespace _3DPRT
     {
 
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
         /// ltMessage control.
         /// </summary>
         /// <remarks>
@@ -84,7 +75,7 @@ namespace _3DPRT
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator valPassword;
+        protected global::System.Web.UI.WebControls.CustomValidator valPassword;
 
         /// <summary>
         /// btnRegister control.

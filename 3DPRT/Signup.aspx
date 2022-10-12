@@ -1,34 +1,31 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Signup.aspx.cs" Inherits="_3DPRT.Signup" ViewStateMode="Disabled"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Signup.aspx.cs" MasterPageFile="~/Site.Master" Inherits="_3DPRT.Signup" ViewStateMode="Disabled" %>
 
-<!DOCTYPE html>
+<asp:Content ID="SignUpContent" ContentPlaceHolderID="mainContent" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Sign Up</title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <h1>Signe Up</h1>
-            <p>
-                <asp:Literal ID="ltMessage" runat="server"></asp:Literal>
-            </p>
-        </div>
+    <div align="center" style="height: 160px; margin-top: 143px; text-align: center; font-family: 'Righteous';">
+        <h1>Sign Up</h1>
         <p>
+            <asp:Literal ID="ltMessage" runat="server"></asp:Literal>
+        </p>
+        <p align="center">
             <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtEmail" runat="server" ViewStateMode="Disabled"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="valEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000">Email is required</asp:RequiredFieldValidator>
+            <asp:TextBox ID="txtEmail" runat="server" ViewStateMode="Disabled" BorderStyle="Outset" CssClass="form-control" EnableViewState="False"  Width="20%"></asp:TextBox>        
         </p>
         <p>
+            <asp:RequiredFieldValidator ID="valEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000" Display="Dynamic">Email is required</asp:RequiredFieldValidator>
+        </p>
+
+        <p align="center">
             <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="valPassword" runat="server" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000" OnDataBinding="Register_Click">Password must contain more than 8 characters</asp:RequiredFieldValidator>
+            <asp:TextBox ID="txtPassword" runat="server" BorderStyle="Outset" CssClass="form-control" TextMode="Password" Width="20%"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="btnRegister" runat="server" OnClick="Register_Click" Text="Register" />
+            <asp:CustomValidator ID="valPassword" runat="server" ControlToValidate="txtPassword" ErrorMessage="CustomValidator"></asp:CustomValidator>
         </p>
-    </form>
-</body>
-</html>
+        <p>
+            <asp:Button ID="btnRegister" runat="server" OnClick="Register_Click" Text="Register" CssClass="btn btn-outline-success" type="submit" style="background-color:#CE8523" />
+        </p>
+
+        </div>
+
+</asp:Content>

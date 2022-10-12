@@ -9,7 +9,7 @@ namespace _3DPRT
         {
             if(!Page.IsPostBack)
             {
-                ltMessage.Text = "Wlcome to 3DPRT family!";
+                ltMessage.Text = "Welcome to 3DPRT family!";
             }
         }
 
@@ -21,7 +21,7 @@ namespace _3DPRT
             }
             else if (txtPassword.Text.Length < 8)
             {
-                ltMessage.Text = "Please have your password longer than 8 characters!";
+                ltMessage.Text = "Please make sure that password contains at least 8 characters!";
             }
             else
             {
