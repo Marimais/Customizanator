@@ -17,6 +17,7 @@ namespace _3DPRT.Models
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get ; set; }
+        public Role Role { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
     }
