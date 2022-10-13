@@ -5,10 +5,10 @@ namespace _3DPRT.Models
     public class Printing:Service
     {
         [Required]
-        public Color Color { get; set; }
+        public virtual Color Color { get; set; }
         [Required]
-        public PrintingMaterial Material { get; set; }
+        public virtual PrintingMaterial Material { get; set; }
         [Required]
-        public  Model Model;
+        public virtual Model Model { get; set; }
     }
 }
