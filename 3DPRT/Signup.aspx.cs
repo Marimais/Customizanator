@@ -1,32 +1,67 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Entity.Core;
+using System.Data.Entity.Validation;
 using System.Web.UI;
+using _3DPRT.DataAccess;
+using _3DPRT.Models;
+using Newtonsoft.Json;
 
 namespace _3DPRT
 {
     public partial class Signup : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!Page.IsPostBack)
+            if (!Page.IsPostBack)
             {
-                ltMessage.Text = "Welcome to 3DPRT family!";
+                ltMessage.Text = "Please enter your email and password";
             }
         }
 
         protected void Register_Click(object sender, EventArgs e)
         {
-            if (txtEmail.Text.Length < 0)
+            var context = new PrintingDBContext();
+
+            try
             {
-                ltMessage.Text = "Please fill in your email!";
+                if (!valEmail.IsValid)
+                {
+                    ltMessage.Text = $"Please enter Email again.";
+                    txtEmail.Text = String.Empty;
+                    txtEmail.Dispose();
+                }
+                else if (!valPassword.IsValid)
+                {
+                    ltMessage.Text = $"Please enter password again.";
+                    txtPassword.Text = String.Empty;
+                    txtPassword.Dispose();
+                }
+                else
+                {
+                    context.Users.Add(new User(txtEmail.Text, txtPassword.Text));
+                    context.SaveChanges();
+                    ltMessage.Text = $"Your email {txtEmail.Text} has been registered";
+                    txtEmail.Text = String.Empty;
+                    txtPassword.Text = String.Empty;
+                    txtEmail.Dispose();
+                    txtPassword.Dispose();
+
+                }
             }
-            else if (txtPassword.Text.Length < 8)
+            catch (DbEntityValidationException)
             {
-                ltMessage.Text = "Please make sure that password contains at least 8 characters!";
+                ltMessage.Text = $"Entered credantials are invalid";
+                txtEmail.Text = String.Empty;
+                txtPassword.Text = String.Empty;
+                txtEmail.Dispose();
+                txtPassword.Dispose();
             }
-            else
+            catch (Exception ex)
             {
-                ltMessage.Text = $"Your email {txtEmail.Text} has been registered";
-            }            
+                ltMessage.Text = ex.Message;
+            }
         }
     }
 }

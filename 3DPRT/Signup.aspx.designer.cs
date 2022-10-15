@@ -48,7 +48,7 @@ namespace _3DPRT
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator valEmail;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator valEmail;
 
         /// <summary>
         /// lblPassword control.
@@ -75,7 +75,7 @@ namespace _3DPRT
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CustomValidator valPassword;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator valPassword;
 
         /// <summary>
         /// btnRegister control.
