@@ -21,8 +21,6 @@ namespace _3DPRT
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            Database.SetInitializer<PrintingDBContext>(null);
-
             Application["ApplicationStartDateTime"] = DateTime.Now;
         }
 
