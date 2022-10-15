@@ -16,7 +16,7 @@ namespace _3DPRT
         {
             if (!Page.IsPostBack)
             {
-                ltMessage.Text = "Please enter your email and password";
+                ltMessage.Text = "Required fields are marked with '*'";
             }
         }
 
@@ -38,16 +38,27 @@ namespace _3DPRT
                     txtPassword.Text = String.Empty;
                     txtPassword.Dispose();
                 }
+                else if(!valFirstName.IsValid)
+                {
+                    ltMessage.Text = $"Please enter correct first name.";
+                    txtFirstName.Text = String.Empty;
+                    txtFirstName.Dispose();
+                }
+                else if(!valLastName.IsValid)
+                {
+                    ltMessage.Text = $"Please enter correct last name.";
+                    txtLastName.Text = String.Empty;
+                    txtLastName.Dispose();
+                }
                 else
                 {
-                    context.Users.Add(new User(txtEmail.Text, txtPassword.Text));
+                    context.Users.Add(new User(txtEmail.Text, txtPassword.Text, txtFirstName.Text, txtLastName.Text, Role.Client, null));
                     context.SaveChanges();
                     ltMessage.Text = $"Your email {txtEmail.Text} has been registered";
                     txtEmail.Text = String.Empty;
                     txtPassword.Text = String.Empty;
                     txtEmail.Dispose();
                     txtPassword.Dispose();
-
                 }
             }
             catch (DbEntityValidationException)
