@@ -1,5 +1,6 @@
 ﻿using _3DPRT.Models;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace _3DPRT.DataAccess
 {
@@ -17,5 +18,11 @@ namespace _3DPRT.DataAccess
         public DbSet<CNC> Carvings { get; set; }
         public DbSet<Laser> Engravings { get; set; }
         public DbSet<Printing> Printings { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+        }
+
     }
 }
