@@ -104,7 +104,7 @@
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell>
-                    <a href="#" style="color:azure">FAQs</a>
+                    <a href="FAQ.aspx" style="color:azure">FAQs</a>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
