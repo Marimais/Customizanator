@@ -12,7 +12,7 @@
             <asp:TextBox ID="txtEmail" runat="server" ViewStateMode="Disabled" BorderStyle="Outset" CssClass="form-control" EnableViewState="False"  Width="20%"></asp:TextBox>        
         </p>
         <p>
-            <asp:RequiredFieldValidator ID="valEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="RequiredFieldValidator" ForeColor="#CC0000" Display="Dynamic">Email is required</asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="valEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is invalid" ValidationExpression="^\S+@\S+$"></asp:RegularExpressionValidator>
         </p>
 
         <p align="center">
@@ -20,7 +20,7 @@
             <asp:TextBox ID="txtPassword" runat="server" BorderStyle="Outset" CssClass="form-control" TextMode="Password" Width="20%"></asp:TextBox>
         </p>
         <p>
-            <asp:CustomValidator ID="valPassword" runat="server" ControlToValidate="txtPassword" ErrorMessage="CustomValidator"></asp:CustomValidator>
+            <asp:RegularExpressionValidator ID="valPassword" runat="server" ControlToValidate="txtPassword" ErrorMessage="Password must contain at least one digit, one lower, one upper case character and must be at least 8  characters long." ValidationExpression="^((?=.*[a-z])(?=.*[A-Z])(?=.*\d)).{8,}$"></asp:RegularExpressionValidator>
         </p>
         <p>
             <asp:Button ID="btnRegister" runat="server" OnClick="Register_Click" Text="Register" CssClass="btn btn-outline-success" type="submit" style="background-color:#CE8523" />
