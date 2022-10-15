@@ -7,6 +7,8 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
+using System.Data.Entity;
+using _3DPRT.DataAccess;
 
 namespace _3DPRT
 {
@@ -18,6 +20,8 @@ namespace _3DPRT
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Database.SetInitializer<PrintingDBContext>(null);
 
             Application["ApplicationStartDateTime"] = DateTime.Now;
         }
