@@ -63,12 +63,6 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\3DPRT\3DPRT.csproj">
-      <Project>{3D53395C-87CE-4D2C-9376-06C031C3A5E6}</Project>
-      <Name>3DPRT</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
