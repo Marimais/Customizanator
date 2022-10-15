@@ -59,7 +59,10 @@
 <body class="body">
 
     <form class="company-name">
-        <h1>SoftBear Solutions</h1>
+        
+        <a href="Default.aspx"> 
+            <h1>SoftBear Solutions</h1>
+        </a>
     </form>
     
     <br />
