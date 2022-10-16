@@ -198,14 +198,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="FAQ.aspx" />
+    <Content Include="Pages\About.aspx" />
+    <Content Include="Pages\FAQ.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="Pages\Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -222,6 +222,7 @@
       <DependentUpon>Dockerfile</DependentUpon>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Pages\Print.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -250,7 +251,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Signup.aspx" />
+    <Content Include="Pages\Signup.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -259,28 +260,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
+    <Compile Include="Pages\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
+    <Compile Include="Pages\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="FAQ.aspx.cs">
+    <Compile Include="Pages\FAQ.aspx.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FAQ.aspx.designer.cs">
+    <Compile Include="Pages\FAQ.aspx.designer.cs">
       <DependentUpon>FAQ.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataAccess\PrintingDBContext.cs" />
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="Pages\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="Pages\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -299,12 +300,19 @@
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\Stock.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Pages\Print.aspx.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Print.aspx.designer.cs">
+      <DependentUpon>Print.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Signup.aspx.cs">
+    <Compile Include="Pages\Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Signup.aspx.designer.cs">
+    <Compile Include="Pages\Signup.aspx.designer.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
