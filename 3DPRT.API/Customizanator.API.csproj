@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\3DPRT\3DPRT.csproj" />
+    <ProjectReference Include="..\3DPRT\Customizanator.APP.csproj" />
   </ItemGroup>
 
 </Project>

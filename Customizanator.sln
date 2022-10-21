@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DPRT", "3DPRT\3DPRT.csproj", "{3D53395C-87CE-4D2C-9376-06C031C3A5E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customizanator.APP", "3DPRT\Customizanator.APP.csproj", "{3D53395C-87CE-4D2C-9376-06C031C3A5E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DPRT.Tests", "3DPRT.Tests\3DPRT.Tests.csproj", "{66D808AB-DE6C-4D65-AA42-62A147B1D616}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customizanator.Tests", "3DPRT.Tests\Customizanator.Tests.csproj", "{66D808AB-DE6C-4D65-AA42-62A147B1D616}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DPRT.API", "3DPRT.API\3DPRT.API.csproj", "{DF040D3F-B71F-43B3-9C7F-522D333BF6E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customizanator.API", "3DPRT.API\Customizanator.API.csproj", "{DF040D3F-B71F-43B3-9C7F-522D333BF6E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
