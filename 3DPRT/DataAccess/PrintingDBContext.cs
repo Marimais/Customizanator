@@ -6,7 +6,7 @@ namespace _3DPRT.DataAccess
 {
     public class PrintingDBContext : DbContext
     {
-        public PrintingDBContext() : base("PrintingDatabase")
+        public PrintingDBContext() : base("DB")
         {
 
         }
