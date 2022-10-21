@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customizanator.APP", "3DPRT\Customizanator.APP.csproj", "{3D53395C-87CE-4D2C-9376-06C031C3A5E6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customizanator.Tests", "3DPRT.Tests\Customizanator.Tests.csproj", "{66D808AB-DE6C-4D65-AA42-62A147B1D616}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customizanator.API", "3DPRT.API\Customizanator.API.csproj", "{DF040D3F-B71F-43B3-9C7F-522D333BF6E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customizanator.APP", "Customizanator.App\Customizanator.APP.csproj", "{3D53395C-87CE-4D2C-9376-06C031C3A5E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +15,6 @@ Global
 		{3D53395C-87CE-4D2C-9376-06C031C3A5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D53395C-87CE-4D2C-9376-06C031C3A5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D53395C-87CE-4D2C-9376-06C031C3A5E6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66D808AB-DE6C-4D65-AA42-62A147B1D616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66D808AB-DE6C-4D65-AA42-62A147B1D616}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66D808AB-DE6C-4D65-AA42-62A147B1D616}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66D808AB-DE6C-4D65-AA42-62A147B1D616}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DF040D3F-B71F-43B3-9C7F-522D333BF6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF040D3F-B71F-43B3-9C7F-522D333BF6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF040D3F-B71F-43B3-9C7F-522D333BF6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF040D3F-B71F-43B3-9C7F-522D333BF6E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
