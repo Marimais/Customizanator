@@ -10,6 +10,9 @@ namespace _3DPRT.API.Controllers
     {
         [HttpGet]
         public ActionResult<List<User>> GetAll() => UserService.GetAll();
-        
+
+        [HttpGet("{FirstName}")]
+        public ActionResult<List<User>> Get(string firstName) => UserService.Get(firstName);
+
     }
 }

@@ -10,5 +10,10 @@ namespace _3DPRT.API.Services
         {
             return dbContext.Users.ToList();
         }
+
+        public static List<User> Get(string firstName)
+        {
+            return dbContext.Users.ToList().Where(x => x.FirstName == firstName).ToList();  
+        }
     }
 }
