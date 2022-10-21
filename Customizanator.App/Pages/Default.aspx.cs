@@ -13,8 +13,5 @@ namespace _Customizanator
         {
 
         }
-
-        //move css to seperate files £separation of content
-        //rename solution and project, come up with better page name....
     }
 }

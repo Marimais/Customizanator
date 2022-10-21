@@ -1,0 +1,75 @@
+﻿body {
+    padding-top: 3em;
+    padding-bottom: 1.25em;
+    width: 100%;
+    height: 100%;
+    background-color: #FCE7CC;
+    font-family: 'Righteous';
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 17.5em;
+}
+
+h1 {
+    position: fixed;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3em;
+    color: #2A363B;
+    top: 0;
+}
+
+
+footer {
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    bottom: 0;
+    background: #2A363B;
+    color: azure;
+    text-align: center;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-table {
+    display: table;
+    height: 70%;
+    width: 70%;
+}
+.footer-table-header {
+    font-size: 1.2em;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer-table-cell {
+    font-size: 0.9em;
+    display: inline-block;
+    color: azure;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#mainForm {
+    height: 70%;
+    bottom: 30%;
+    mix-blend-mode: darken;
+    position: relative;
+    background-color: orange;
+    font-family: 'Righteous';
+}
