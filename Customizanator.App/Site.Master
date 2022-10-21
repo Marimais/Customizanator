@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="_Customizanator.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customizanator</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+
+    <style>
+        h1 {
+            position: fixed;
+            font-family: 'Righteous';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            color: #2A363B;
+            top:0;
+        }
+
+        body {
+            background-color: #FCE7CC;
+            mix-blend-mode: darken;
+            position: relative;
+            width: 100%;
+            height: 100%;            
+        }
+
+        footer {
+            width: 100%;
+            height: 20%;
+            position: fixed;
+            bottom: 0;
+            background: #2A363B;
+            color: azure;
+            text-align: center;
+            left: 0;
+            right:0;
+        }
+
+        .main {
+             height: 70%;
+             bottom:30%;
+        }
+    </style>
+
+</head>
+<body class="body">
+
+    <form class="company-name">
+        
+        <a href="Default.aspx"> 
+            <h1>Customizanator </h1>
+        </a>
+    </form>
+    
+    <br />
+    <nav class="navbar navbar-dark bg-dark pull-right">
+        <form class="form-inline" >
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-default" type="submit" style="color:darkgoldenrod">Search</button>
+        </form>
+    </nav>
+
+    <form id="mainForm" runat="server" class="main">
+        <asp:ContentPlaceHolder ID="mainContent" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </form>
+
+
+    <footer class="footer">
+        <asp:Table ID="tblFooter" runat="server" Height="70%" Width="70%" HorizontalAlign="Center" BorderWidth="20px" BorderColor="Transparent">
+            <asp:TableHeaderRow>
+                <asp:TableHeaderCell Text="Site Links" HorizontalAlign="Center" Style="text-align: center; font-size: 16px;"></asp:TableHeaderCell>
+                <asp:TableHeaderCell Text="Contact Us" HorizontalAlign="Center" Style="text-align: center; font-size: 16px;"></asp:TableHeaderCell>
+                <asp:TableHeaderCell Text="Follow Us" HorizontalAlign="Center" Style="text-align: center; font-size: 16px;"></asp:TableHeaderCell>
+            </asp:TableHeaderRow>
+            <asp:TableRow>
+                <asp:TableCell>
+                    <a href="Signup.aspx" style="color:azure">Sign Up</a>
+                </asp:TableCell>
+
+                <asp:TableCell>
+                    info@softbear.com
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow HorizontalAlign="NotSet">
+                <asp:TableCell>
+                    <a href="About.aspx" style="color:azure">About Us</a>
+                </asp:TableCell>
+                <asp:TableCell>(+372) 1234 5678</asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow>
+                <asp:TableCell>
+                    <a href="FAQ.aspx" style="color:azure">FAQs</a>
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+    </footer>
+</body>
+
+</html>
