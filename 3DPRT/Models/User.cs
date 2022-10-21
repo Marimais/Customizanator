@@ -6,6 +6,10 @@ namespace _3DPRT.Models
 {
     public class User
     {
+        public User()
+        {
+
+        }
         public User(string email, string password, string? firstName, string? lastName, Role role, List<Order>? orders)
         {
             Email = email;
