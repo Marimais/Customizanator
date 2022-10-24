@@ -20,27 +20,25 @@
 
 <body id= "mainBody" class="body light-theme">
 
+
+
     <form class="company-name">        
         <a href="Default.aspx"> 
             <h1>Customizanator </h1>
         </a>
     </form>
-    <br />
 
     
 
-    <nav class="navbar navbar-dark bg-dark">
-       <form class="navbar-right">
-            <button id="theme-btn" type="reset">Dark</button>
-        </form> 
-        <br />
-        <form class="navbar-right" >
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-default" type="submit">Search</button>            
-        </form>
-        
-    </nav>
+    <nav class="navbar navbar-dark bg-dark navbar-right ml-auto">  
+     
+        <form class="form-inline">
+            <button id="theme-btn" type="reset" class="glyphicon glyphicon-tint"></button>
 
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-default glyphicon glyphicon-search" type="submit"></button> 
+        </form>
+    </nav>  
     <form id="mainForm" runat="server" class="main">
         <asp:ContentPlaceHolder ID="mainContent" runat="server">
 
@@ -57,7 +55,7 @@
             </asp:TableHeaderRow>
             <asp:TableRow>
                 <asp:TableCell>
-                    <a href="Signup.aspx" style="color:azure">Sign Up</a>
+                    <a href="Signup.aspx" aria-label="Sign Up as an user">Sign Up</a>
                 </asp:TableCell>
 
                 <asp:TableCell>
@@ -66,13 +64,13 @@
             </asp:TableRow>
             <asp:TableRow HorizontalAlign="NotSet">
                 <asp:TableCell>
-                    <a href="About.aspx" style="color:azure">About Us</a>
+                    <a href="About.aspx" aria-label="Information about the company">About Us</a>
                 </asp:TableCell>
                 <asp:TableCell>(+372) 1234 5678</asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell>
-                    <a href="FAQ.aspx" style="color:azure">FAQs</a>
+                    <a href="FAQ.aspx" aria-label="Ferquently asked questions">FAQs</a>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>

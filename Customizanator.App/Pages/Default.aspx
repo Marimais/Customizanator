@@ -5,9 +5,9 @@
     <div align="center" class="default-body-content">
             
                 <div>
-                    <a href="Print.aspx" style="color:black">
+                    <a href="Print.aspx" aria-label="3D Printing">
                     <div class="card  default-card">
-                      <img class="card-img-top" src="/images/printer.png">
+                      <img class="card-img-top" alt="" src="/images/printer.png">
                       <div class="card-body">
                         <p class="card-text">3D Printing</p>
                       </div>                        
@@ -15,9 +15,9 @@
                     </a>
                  </div>
                 <div>
-                    <a href="#" style="color:black">
+                    <a href="#" aria-label="Laser engraving and cutout">
                         <div class="card default-card">
-                          <img class="card-img-top" src="/images/laser.png">
+                          <img class="card-img-top" alt="" src="/images/laser.png">
                           <div class="card-body">
                             <p class="card-text">Laser engraving and cutout</p>
                           </div>
@@ -25,9 +25,9 @@
                     </a>
                 </div>
                 <div>  
-                    <a href="#" style="color:black">
+                    <a href="#" aria-label="CNC carving">
                         <div class="card default-card">
-                          <img class="card-img-top" src="/images/cnc.png">
+                          <img class="card-img-top" alt="" src="/images/cnc.png">
                           <div class="card-body">
                             <p class="card-text">CNC carving</p>
                           </div>
