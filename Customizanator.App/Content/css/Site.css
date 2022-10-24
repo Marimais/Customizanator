@@ -1,10 +1,22 @@
-﻿body {
+﻿:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+    --beige: #FCE7CC;
+    --orange: #d16002;
+    --greenish: #2A363B;
+    --pumpkin: #d16002;
+    --carrot: #ec9706;
+}
+
+body {
     padding-top: 3em;
     padding-bottom: 1.25em;
     width: 100%;
     height: 100%;
-    background-color: #FCE7CC;
     font-family: 'Righteous';
+    color:var(--fontColor);
+    background-color : var(--bg);
 }
 
 /* Wrapping element */
@@ -26,8 +38,8 @@ h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 3em;
-    color: #2A363B;
     top: 0;
+    color: var(--fontColor);
 }
 
 
@@ -36,8 +48,8 @@ footer {
     height: 20%;
     position: fixed;
     bottom: 0;
-    background: #2A363B;
-    color: azure;
+    background: var(--footerBg);
+    color: var(--footerFontColor);
     text-align: center;
     left: 0;
     right: 0;
@@ -74,7 +86,7 @@ footer {
 
 .default-body-content {
     text-align: center;
-    background-color: #ec9706;
+    background-color: var(--boxBg);
     position: fixed;
     top: 20%;
     left: 15%;
@@ -93,7 +105,7 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    background-color: #d16002;
+    background-color: var(--cardBg);
 }
 
 .default-card:hover {
@@ -102,4 +114,34 @@ footer {
 
 img{
     width:100%;
+}
+
+#theme-btn {
+    position: relative;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.light-theme {
+    --bg: var(--beige);
+    --fontColor: var(--greenish);
+    --boxBg: var(--carrot);
+    --cardBg: var(--pumpkin);
+    --footerBg: var(--greenish);
+    --footerFontColor: var(--white);
+    --btnBg: var(--greenish);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--carrot);
+    --fontColor: var(--white);
+    --boxBg: var(--carrot);
+    --cardBg: var(--pumpkin);
+    --footerBg: var(--greenish);
+    --footerFontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
 }
