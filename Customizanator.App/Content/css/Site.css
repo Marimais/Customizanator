@@ -5,8 +5,14 @@
     --beige: #FCE7CC;
     --orange: #d16002;
     --greenish: #2A363B;
-    --pumpkin: #d16002;
-    --carrot: #ec9706;
+    --pumpkin: #ff7518;
+    --carrot: #e9692c;
+    --light-carrot: #f7cbb6;
+    --pinky-carrot: #f5bb9f;
+    --darker-beige: #e1c4a5;
+    --autumn-leaves:#e09f3e;
+    --maple:#9e2a2b;
+    --peache:#dda15e;
 }
 
 body {
@@ -130,8 +136,8 @@ img{
 .light-theme {
     --bg: var(--beige);
     --fontColor: var(--greenish);
-    --boxBg: var(--carrot);
-    --cardBg: var(--pumpkin);
+    --boxBg: var(--darker-beige);
+    --cardBg: var(--beige);
     --footerBg: var(--greenish);
     --footerFontColor: var(--white);
     --btnBg: var(--greenish);
@@ -139,10 +145,10 @@ img{
 }
 
 .dark-theme {
-    --bg: var(--carrot);
+    --bg: var(--peache);
     --fontColor: var(--white);
-    --boxBg: var(--carrot);
-    --cardBg: var(--pumpkin);
+    --boxBg: var(--pumpkin);
+    --cardBg: var(--maple);
     --footerBg: var(--greenish);
     --footerFontColor: var(--white);
     --btnBg: var(--white);
