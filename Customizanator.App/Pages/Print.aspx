@@ -2,27 +2,26 @@
 
 <asp:Content ID="PrintContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div align="center" style="height: 160px; margin-top: 143px; text-align: center; font-family: 'Righteous';">
+    <div class="form">
         <h2>3D printing</h2>
+        <asp:Literal ID="ltPrintMessage" runat="server"></asp:Literal>
+
+        <div class="form-row">
+            <asp:Label ID="lbModel" runat="server" Text="Model" CssClass="form-label"></asp:Label>
+        </div>
+        
+        <div class="form-row">
+            <asp:Label ID="lblColor" runat="server" Text="Color" CssClass="form-label"></asp:Label>
+            <asp:DropDownList ID="ddColor" runat="server" OnSelectedIndexChanged="ddColor_SelectedIndexChanged" CssClass="form-input"></asp:DropDownList>
+        </div>
+
+        <div class="form-row">
+            <asp:Label ID="lblMaterial" runat="server" Text="Material" CssClass="form-label"></asp:Label>
+            <asp:DropDownList ID="ddMaterial" runat="server" CssClass="form-input"></asp:DropDownList>
+        </div>
+        
         <p>
-            <asp:Literal ID="ltPrintMessage" runat="server"></asp:Literal>
-        </p>
-        <p align="center">
-            <asp:Label ID="lbModel" runat="server" Text="Model"></asp:Label>
-        </p>
-        <p>
-            &nbsp;</p>
-        <p>
-            <asp:Label ID="lblColor" runat="server" Text="Color"></asp:Label>
-        </p>
-        <p>
-            <asp:DropDownList ID="ddColor" runat="server" OnSelectedIndexChanged="ddColor_SelectedIndexChanged"></asp:DropDownList>
-        </p>
-        <p>
-            <asp:Label ID="lblMaterial" runat="server" Text="Material"></asp:Label>
-        </p>
-        <p>
-            <asp:DropDownList ID="ddMaterial" runat="server"></asp:DropDownList>
+            <asp:Button ID="btnOrder" runat="server" Text="Order"/>
         </p>
      </div>
 
