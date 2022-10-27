@@ -129,6 +129,7 @@ img{
     width:100%;
 }
 
+#login-btn,
 #theme-btn {
     position: relative;
     border-radius: 50%;
@@ -136,6 +137,7 @@ img{
     color: var(--btnFontColor);
     background-color: var(--btnBg);
 }
+
 
 .light-theme {
     --bg: var(--beige);

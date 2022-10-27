@@ -30,6 +30,7 @@
     <nav class="navbar navbar-dark bg-dark navbar-right ml-auto">  
      
         <form class="form-inline">
+            <button id="login-btn" type="reset" class="glyphicon glyphicon-user" onclick="location.href='login.aspx'"></button>
             <button id="theme-btn" type="reset" class="glyphicon glyphicon-tint"></button>
 
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">

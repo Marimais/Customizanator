@@ -230,6 +230,7 @@
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Pages\Laser.aspx" />
+    <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\Print.aspx" />
     <Content Include="Pages\app.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -322,6 +323,13 @@
     </Compile>
     <Compile Include="Pages\Laser.aspx.designer.cs">
       <DependentUpon>Laser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Print.aspx.cs">
       <DependentUpon>Print.aspx</DependentUpon>
