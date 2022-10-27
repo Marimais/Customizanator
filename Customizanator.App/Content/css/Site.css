@@ -7,11 +7,9 @@
     --greenish: #2A363B;
     --pumpkin: #ff7518;
     --carrot: #e9692c;
-    --light-carrot: #f7cbb6;
-    --pinky-carrot: #f5bb9f;
     --darker-beige: #e1c4a5;
     --autumn-leaves:#e09f3e;
-    --maple:#9e2a2b;
+    --maple:#bc6c25;
     --peache:#dda15e;
 }
 
@@ -89,7 +87,6 @@ footer {
 #mainForm {
     height: 70%;
     bottom: 30%;
-    mix-blend-mode: darken;
     position: relative;
 }
 
@@ -115,6 +112,12 @@ footer {
     transition: 0.3s;
     border-radius: 5px;
     background-color: var(--cardBg);
+    color: var(--cardFontColor);
+    transition: transform .2s;
+}
+
+.default-card:hover {
+    transform: scale(1.5);
 }
 
 .default-card:hover {
@@ -138,6 +141,7 @@ img{
     --fontColor: var(--greenish);
     --boxBg: var(--darker-beige);
     --cardBg: var(--beige);
+    --cardFontColor: var(--black);
     --footerBg: var(--greenish);
     --footerFontColor: var(--white);
     --btnBg: var(--greenish);
@@ -145,10 +149,11 @@ img{
 }
 
 .dark-theme {
-    --bg: var(--peache);
+    --bg: var(--autumn-leaves);
     --fontColor: var(--white);
-    --boxBg: var(--pumpkin);
-    --cardBg: var(--maple);
+    --boxBg: var(--maple);
+    --cardBg: var(--autumn-leaves);
+    --cardFontColor: var(--black);
     --footerBg: var(--greenish);
     --footerFontColor: var(--white);
     --btnBg: var(--white);
@@ -162,8 +167,10 @@ a
 
 a:visited {
     color: inherit;
+    text-decoration: none;
 }
 
 a:hover {
     color: inherit;
+    text-decoration: none;
 }

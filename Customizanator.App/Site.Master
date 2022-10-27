@@ -20,15 +20,11 @@
 
 <body id= "mainBody" class="body light-theme">
 
-
-
     <form class="company-name">        
         <a href="Default.aspx"> 
             <h1>Customizanator </h1>
         </a>
     </form>
-
-    
 
     <nav class="navbar navbar-dark bg-dark navbar-right ml-auto">  
      
@@ -40,11 +36,8 @@
         </form>
     </nav>  
     <form id="mainForm" runat="server" class="main">
-        <asp:ContentPlaceHolder ID="mainContent" runat="server">
-
-        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="mainContent" runat="server"></asp:ContentPlaceHolder>
     </form>
-
 
     <footer class="footer">
         <asp:Table ID="tblFooter" runat="server" CssClass="footer-table">
