@@ -25,7 +25,7 @@
                     </a>
                 </div>
                 <div>  
-                    <a href="#" aria-label="CNC carving">
+                    <a href="CNC.aspx" aria-label="CNC carving">
                         <div class="card default-card">
                           <img class="card-img-top" alt="" src="/images/cnc.png">
                           <div class="card-body">
