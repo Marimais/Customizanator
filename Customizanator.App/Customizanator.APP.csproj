@@ -228,6 +228,7 @@
       <DependentUpon>Dockerfile</DependentUpon>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Pages\Laser.aspx" />
     <Content Include="Pages\Print.aspx" />
     <Content Include="Pages\app.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -307,6 +308,13 @@
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\Stock.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Pages\Laser.aspx.cs">
+      <DependentUpon>Laser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Laser.aspx.designer.cs">
+      <DependentUpon>Laser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Print.aspx.cs">
       <DependentUpon>Print.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
