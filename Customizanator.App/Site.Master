@@ -14,7 +14,8 @@
 
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="~/Content/css/Site.css" rel="stylesheet" type="text/css"/>
 </head>
 
@@ -50,16 +51,17 @@
                 <asp:TableCell>
                     <a href="Signup.aspx" aria-label="Sign Up as an user">Sign Up</a>
                 </asp:TableCell>
-
+                <asp:TableCell>info@softbear.com</asp:TableCell>
                 <asp:TableCell>
-                    info@softbear.com
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow HorizontalAlign="NotSet">
                 <asp:TableCell>
                     <a href="About.aspx" aria-label="Information about the company">About Us</a>
                 </asp:TableCell>
-                <asp:TableCell>(+372) 1234 5678</asp:TableCell>
+                <asp:TableCell>(+372) 1234 5678</asp:TableCell>                
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell>
